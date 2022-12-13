@@ -1,19 +1,19 @@
-$repeat-props: (
+$image-repeat-props: (
     'bg-repeat': 'repeat',
     'bg-no-repeat': 'no-repeat',
     'bg-repeat-x': 'repeat-x',
     'bg-repeat-y': 'repeat-y',
     'bg-repeat-round': 'round',
     'bg-repeat-space': 'space'
-);
+) !default;
 
-$size-props: (
+$image-size-props: (
     'bg-auto': 'auto',
     'bg-cover': 'cover',
     'bg-contain': 'contain'
-);
+) !default;
 
-$position-props: (
+$image-position-props: (
     'bg-bottom': 'bottom',
     'bg-center': 'center',
     'bg-left': 'left',
@@ -23,8 +23,8 @@ $position-props: (
     'bg-right-bottom': 'right bottom',
     'bg-right-top': 'right top',
     'bg-top': 'top'
-);
+) !default;
 
-@include style-class('background-repeat', $repeat-props, true);
-@include style-class('background-size', $size-props, true);
-@include style-class('background-position', $position-props, true);
+@include style-class('background-repeat', $image-repeat-props, true);
+@include style-class('background-size', $image-size-props, true);
+@include style-class('background-position', $image-position-props, true);
