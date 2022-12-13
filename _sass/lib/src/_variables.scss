@@ -1,4 +1,5 @@
 $separator:"\\:" !default;
+$prefix: '' !default;
 
 $sm:400px !default;
 $smm:576px !default;
@@ -15,10 +16,10 @@ $helperTextMargin: .25rem !default;
 $spacer:1rem !default;
 
 $breakpoints: (
-    'sm': 400px,
-    'smm': 576px,
-    'md': 768px,
-    'lg': 992px,
-    'xl': 1200px,
-    'xxl': 1921px
+    'sm': $sm,
+    'smm': $smm,
+    'md': $md,
+    'lg': $lg,
+    'xl': $xl,
+    'xxl': $xxl
 );
